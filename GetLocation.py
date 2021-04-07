@@ -5,16 +5,17 @@ import keyboard  # using module keyboard
 
 #This chunk of code intends to get the current longitude and latitude of whoever is using the system
 
-#Get location data from geocoder
+
 print("Welcome to Poseidon's CSN geolocation system! Press 'G' on your keyboard to get data on your current location")
+#Get location data from geocoder
 g = geocoder.ip('me')
 
-while True:  # making a loop
-    try:  # used try so that if user pressed other than the given key error will not be shown
+while True:  
+    try:  
         if keyboard.is_pressed('g'):  # if key is pressed 
             print(f"The country you are in is: {g.country}")
             print(f"The city in which you are accessing this program: {g.address}")
             print(f"Your latitude and longitude coordinates are: {g.latlng}")
-            break  # finishing the loop
+            break  
     except:
-        break  # if user pressed a key other than the given key the loop will break
+        break  
