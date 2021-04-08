@@ -1,5 +1,5 @@
 import geocoder
-import keyboard  # using module keyboard
+import keyboard 
 
 #run pip instally geocoder, and pip install keyboard for the program to function as desired
 
